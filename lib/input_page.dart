@@ -332,7 +332,7 @@ class _InputPageState extends State<InputPage> {
                     timeInSecForIosWeb: 1,
                     backgroundColor: Colors.grey,
                     textColor: Colors.white,
-                    fontSize: 20.0);
+                    fontSize: 21.0);
               } else {
                 calculator cal = calculator(height: height, weight: weight);
                 Navigator.push(
