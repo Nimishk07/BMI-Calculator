@@ -1,7 +1,7 @@
 import 'package:bmi/result.dart';
 import 'package:flutter/material.dart';
 import 'input_page.dart';
-import 'result.dart';
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 
 void main() => runApp(BMICalculator());
 
@@ -13,7 +13,12 @@ class BMICalculator extends StatelessWidget {
         primaryColor: Color(0xff141526),
         scaffoldBackgroundColor: Color(0xff141526),
       ),
-      home: InputPage(),
+      home: AnimatedSplashScreen(
+        splash: Image.asset('lib/images/a.png'),
+        nextScreen: InputPage(),
+        splashTransition: SplashTransition.rotationTransition,
+        duration: 3000,
+      ),
     );
   }
 }
