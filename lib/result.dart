@@ -22,7 +22,7 @@ class Result extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.only(right: 63),
               child: Text(
-                'BMI Calulator',
+                'BMI Calculator',
                 textAlign: TextAlign.center,
               ),
             ),
